@@ -8,12 +8,10 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 1fr 60px;
     grid-template-areas: 
     'header header'
     'nav main'
     'footer footer';
-    height: 100vh;
 }
 header{
     grid-area: header;
@@ -40,6 +38,7 @@ nav{
     grid-area: nav;
     background-color: white;
     border-right: 0.1px solid rgb(220, 220, 220);
+    min-height: 100vh;
 }
 nav ul{
     display: flex;
@@ -48,7 +47,8 @@ nav ul{
     list-style: none;
     gap: 10px;
     align-items: start;
-    padding: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
 }
 main{
     grid-area: main;
@@ -56,32 +56,23 @@ main{
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    'prod1 prod2 prod3'
-    'prod4 prod4 prod4'
-    ;
+    min-height: 100vh;
+
 }
-.prod1{
-    grid-area: prod1;
+
+section{
     display: flex;
-
-}
-.prod1 img{
-    width: 100px;
-}
-.prod1 p{
-    width: 500px;
-}
-.prod2{
-    grid-area: prod2;
-}
-.prod3{
-    grid-area: prod3;
-}
-prod4{
-    grid-area: prod4;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
 }
 
+section img{
+    width: 250px;
+    height: 270px;
+    border-radius: 10%;
+
+}
 footer{
     grid-area: footer;
     background-color: rgb(236, 236, 236);
