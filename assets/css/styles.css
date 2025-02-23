@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Raleway" , sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,33 +13,45 @@ body{
     'nav main'
     'footer footer';
 }
+
 header{
     grid-area: header;
-    background-color: black;
-    color:white;
+    background-color: #222222;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: start;
     background-size: cover;
     background-position: center;
-    height: 100px;
+    height: 110px;
     border-bottom: 0.1px solid  rgb(220, 220, 220);
 }
+
 h1{
     font-size: 40px;
     font-weight: 110;
-    margin-top: 15px;
-    margin-left: 100px;
+    margin-top: 22px;
+    margin-left: 150px;
 }
+
 .pheader{
-    margin-left: 190px;
+    margin-left: 220px;
 }
+
 nav{
     grid-area: nav;
     background-color: white;
     border-right: 0.1px solid rgb(220, 220, 220);
     min-height: 100vh;
 }
+
+.categorias{
+    padding-left: 35px;
+    padding-top:40px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 nav ul{
     display: flex;
     flex-direction: column;
@@ -47,16 +59,16 @@ nav ul{
     list-style: none;
     gap: 10px;
     align-items: start;
-    padding-top: 40px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 35px;
 }
+
 main{
     grid-area: main;
     margin: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 100vh;
-
 }
 
 .productos{
@@ -73,25 +85,35 @@ main{
     border-radius: 10%;
     align-self: center;
 }
-.precio{
-    margin-left: 170px;
+
+.productos h3{
+    margin-top: 5px;
+    margin-left: 15px;
 }
+
+.productos p{
+    margin-left: 15px;
+}
+
+.precio{
+    align-self: flex-end;
+    padding-right: 25px;
+}
+
 button{
     margin-top: 5px;
     align-self: center;
-    background-color: black;
+    background-color: #222222;
     color: white;
 }
+
 button p{
     padding: 5px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
 footer{
     grid-area: footer;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+    border-top: 0.1px solid rgb(220, 220, 220);
 }
