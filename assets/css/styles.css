@@ -36,18 +36,19 @@ h1{
 
 .pheader{
     margin-left: 220px;
+    padding-top: 2px;
 }
 
 nav{
     grid-area: nav;
-    background-color: white;
+    background-color: rgb(242, 242, 242);
     border-right: 0.1px solid rgb(220, 220, 220);
     min-height: 100vh;
 }
 
 .categorias{
-    padding-left: 35px;
-    padding-top:40px ;
+    padding-left: 40px;
+    padding-top: 50px ;
     font-size: 20px;
     font-weight: bold;
 }
@@ -60,7 +61,7 @@ nav ul{
     gap: 10px;
     align-items: start;
     padding-top: 20px;
-    padding-left: 35px;
+    padding-left: 40px;
 }
 
 .entradas{
@@ -127,4 +128,11 @@ button p{
 footer{
     grid-area: footer;
     border-top: 0.1px solid rgb(220, 220, 220);
+    background-color: #222222;
+    color: white;
+    margin-bottom: 0%;
+    padding-top: 15px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
 }
