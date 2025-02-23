@@ -63,9 +63,20 @@ nav ul{
     padding-left: 35px;
 }
 
-main{
+.entradas{
+    font-size: 28px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    padding-left: 75px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    
+}
+
+.titulo{
     grid-area: main;
     margin: 40px;
+    margin-top: 0%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 100vh;
