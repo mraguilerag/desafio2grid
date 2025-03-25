@@ -86,9 +86,9 @@ nav ul{
 .productos{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 5px;
     margin: 20px;
+    width: 250px;
 }
 
 .productos img{
